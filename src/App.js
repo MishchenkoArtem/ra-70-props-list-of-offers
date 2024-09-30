@@ -1,10 +1,7 @@
 import './App.css';
-import Listing from './components/Listing/Listing.jsx';
+import { data } from './components/constans.js';
+import Listing from './components/Listing/Listing.tsx';
 
-function App () {
-    return (
-        <Listing />
-    );
+export default function App() {
+    return <Listing data={data} />;
 }
-
-export default App;
